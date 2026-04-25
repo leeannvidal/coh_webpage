@@ -20,7 +20,7 @@ sections:
         css_style: ''
   - block: contact-info
     content:
-      # title:
+      title: ""
       visit_title: Visit Our Office
       connect_title: Connect With Us
       address:
