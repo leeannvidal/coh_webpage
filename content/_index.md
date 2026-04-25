@@ -4,26 +4,26 @@ date: 2023-10-24
 type: landing
 
 sections:
-  - block: hero
-    content:
-      title: Turn Hold Time Into Sales Opportunities
-      text: Professional on-hold messages that keep callers engaged, reduce hang-ups, and promote your business while customers wait.
-      primary_action:
-        text: Get a Free Quote
-        url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
-        icon: rocket-launch
-      secondary_action:
-        text: Hear Sample Messages
-        url: /audio-showcase
-    design:
-        background:
-            gradient:
-                start: 'primary-500'
-                end: 'primary-700'
-                direction: 135
-        spacing:
-            padding: [0, 0, 0, 0]
-            margin: [0, 0, 0, 0]
+  # - block: hero
+  #   content:
+  #     title: Turn Hold Time Into Sales Opportunities
+  #     text: Professional on-hold messages that keep callers engaged, reduce hang-ups, and promote your business while customers wait.
+  #     primary_action:
+  #       text: Get a Free Quote
+  #       url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
+  #       icon: rocket-launch
+  #     secondary_action:
+  #       text: Hear Sample Messages
+  #       url: /audio-showcase
+  #   design:
+  #       background:
+  #           gradient:
+  #               start: 'primary-500'
+  #               end: 'primary-700'
+  #               direction: 135
+  #       spacing:
+  #           padding: [0, 0, 0, 0]
+  #           margin: [0, 0, 0, 0]
     #   # For full-screen, add `min-h-screen` below
     #   css_class: 'glassmorphism-dark glass-ring glass-shadow text-white'
     #   text_color: 'auto' # auto|light|dark
