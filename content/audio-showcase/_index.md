@@ -1,6 +1,6 @@
 ---
 title: "Audio Showcase"
-type: landing
+type: page
 
 sections:
   - block: features
