@@ -6,7 +6,7 @@ sections:
   - block: features
     id: audio-categories # Assign an ID for internal linking
     content:
-      title: "Explore Our Audio Collection"
+      title: Explore Our Audio Collection"
       text: "Listen to a variety of audio samples across different categories."
       items:
         - name: "Music"
@@ -21,6 +21,40 @@ sections:
           icon: speaker-wave
           description: "Pre-recorded messages for on-hold, public address, and radio."
           url: "/audio-showcase/messages/" # Link to a sub-page for messages
+  - block: faq
+    content:
+      title: Explore Our Audio Collection
+      subtitle: Listen to a variety of audio samples across different categories.
+      text: Can't find what you're looking for? [Contact us](/contact)
+      items:
+        - question: Music
+          answer: Dive into instrumental tracks, classical pieces, and modern compositions.
+        
+        - question: Voice
+          answer: Discover a range of voice talent for narrations, promos, and more.
+        
+        - question: Messages
+          answer: Pre-recorded messages for on-hold, public address, and radio.
+      
+      button:
+        text: View All FAQs
+        url: /faq/
+        icon: arrow-right
+    design:
+      spacing:
+        padding: ["6rem", "0", "6rem", "0"]
+  - block: buttons
+    content:
+      buttons:
+        - title: Read my latest paper on LLMs
+          icon: brands/arxiv
+          url: https://arxiv.org/abs/2304.01852
+        - title: Watch my new YouTube video to achieve 20x productivity
+          icon: brands/youtube
+          url: https://youtube.com
+        - title: Connect with me on LinkedIn
+          icon: brands/linkedin
+          url: https://linkedin.com
   - block: logos
     content:
       title: Explore Our Audio Collection
