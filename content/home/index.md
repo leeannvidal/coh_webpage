@@ -10,7 +10,7 @@ sections:
       text: Professional on-hold messages that keep callers engaged, reduce hang-ups, and promote your business while customers wait.
       primary_action:
         text: Get a Free Quote
-        url: /contact-us
+        url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
         icon: rocket-launch
       secondary_action:
         text: Hear Sample Messages
