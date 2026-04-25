@@ -34,7 +34,9 @@ sections:
           answer: Discover a range of voice talent for narrations, promos, and more.
         
         - question: Messages
-          answer: Pre-recorded messages for on-hold, public address, and radio.
+          answer: |
+            Pre-recorded messages for on-hold, public address, and radio.
+            {{< button url="#section" style="outline" rounded="full" icon="arrow-right" icon_position="right" >}}Learn More{{< /button >}}
       
       button:
         text: View All FAQs
@@ -43,18 +45,7 @@ sections:
     design:
       spacing:
         padding: ["6rem", "0", "6rem", "0"]
-  - block: buttons
-    content:
-      buttons:
-        - title: Read my latest paper on LLMs
-          icon: brands/arxiv
-          url: https://arxiv.org/abs/2304.01852
-        - title: Watch my new YouTube video to achieve 20x productivity
-          icon: brands/youtube
-          url: https://youtube.com
-        - title: Connect with me on LinkedIn
-          icon: brands/linkedin
-          url: https://linkedin.com
+
   - block: logos
     content:
       title: Explore Our Audio Collection
