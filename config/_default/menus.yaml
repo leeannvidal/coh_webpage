@@ -18,9 +18,9 @@ main:
   - name: Voice and Music
     url: audio-showcase/
     weight: 40
-  - name: Contact Us
-    url: contact-us/
-    weight: 50
+  # - name: Contact Us
+  #   url: contact-us/
+  #   weight: 50
   # - name: Changelog
   #   url: /changelog/
   #   weight: 35
