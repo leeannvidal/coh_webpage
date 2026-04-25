@@ -41,7 +41,7 @@ sections:
       #     text: show form here
           # url: /opportunities
       map_url: https://maps.app.goo.gl/rUZn89Xr4ASi4xTq8
-      map_embed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.5150533095148!2d-91.13998172218216!3d30.421497974736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a6a85f6bb0a5%3A0x87304b33012d333d!2sCommunications%20On%20Hold%20Inc!5e0!3m2!1sen!2suk!4v1777129150826!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      map_embed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3440.5150533095148!2d-91.13998172218216!3d30.421497974736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8626a6a85f6bb0a5%3A0x87304b33012d333d!2sCommunications%20On%20Hold%20Inc!5e0!3m2!1sen!2suk!4v1777129150826!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       # show_form: true
     design:
       css_class: "bg-gray-50 dark:bg-gray-900"
