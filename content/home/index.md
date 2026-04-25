@@ -146,8 +146,20 @@ sections:
 #       layout: card      
   - block: cta-card
     content:
-      title: Ready to Upgrade Your Caller Experience?
-      text: Let’s create professional on-hold messaging that keeps callers engaged and helps your business stand out.
+    #   title: Ready to Upgrade Your Caller Experience?
+      title: Why On-Hold Messaging?
+    #   text: Let’s create professional on-hold messaging that keeps callers engaged and helps your business stand out.
+      text: |
+        Most businesses spend heavily on advertising to make the phone ring—but very little on what happens when customers call.
+
+
+        When callers are met with silence, poor music, or outdated messaging, many simply hang up—and some never call back.
+
+
+        Professional on-hold marketing helps you keep callers engaged, improve customer experience, and turn waiting time into a powerful sales and branding opportunity.
+
+
+        Every call is a chance to inform, reassure, and sell.
       button:
         text: Get Your Free Quote
         url: /contact-us
