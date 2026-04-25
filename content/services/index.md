@@ -64,28 +64,23 @@ sections:
         text: Professional voice, music, and messaging solutions designed to improve customer experience, promote your business, and strengthen your brand.
         items:
         - name: On-Hold Messages
-            icon: phone
-            description: Custom on-hold messaging that keeps callers engaged, promotes your products and services, and helps reduce hang-ups.
-
+          icon: phone
+          description: Custom on-hold messaging that keeps callers engaged, promotes your products and services, and helps reduce hang-ups.
         - name: Auto-Attendant Greetings & IVR
-            icon: queue-list
-            description: Clear, professional recordings for day greetings, after-hours messages, menus, call routing, and voicemail systems.
-
+          icon: queue-list
+          description: Clear, professional recordings for day greetings, after-hours messages, menus, call routing, and voicemail systems.
         - name: Radio Commercials
-            icon: radio
-            description: Professionally written and produced radio ads with quality voiceovers, music, and production to help your message stand out.
-
+          icon: radio
+          description: Professionally written and produced radio ads with quality voiceovers, music, and production to help your message stand out.
         - name: Overhead Store Announcements
-            icon: speaker-wave
-            description: In-store announcements that promote offers, highlight products, and influence customers while they are already in your business.
-
+          icon: speaker-wave
+          description: In-store announcements that promote offers, highlight products, and influence customers while they are already in your business.
         - name: Call Caddy
-            icon: headset
-            description: Help every call sound professional, even when your team is busy, with recorded messages and call support options.
-
+          icon: headset
+          description: Help every call sound professional, even when your team is busy, with recorded messages and call support options.
         - name: Custom Voice Production
-            icon: microphone
-            description: Professional voice recordings for phone systems, websites, presentations, training materials, and business announcements.
+          icon: microphone
+          description: Professional voice recordings for phone systems, websites, presentations, training materials, and business announcements.
     design:
         columns: "3"
   - block: features
@@ -95,24 +90,20 @@ sections:
         text: Getting professional audio for your business is simple.
         items:
         - name: We Learn About Your Business
-            icon: chat-bubble-left-right
-            description: We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
-
+          icon: chat-bubble-left-right
+          description: We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
         - name: We Write Your Script
-            icon: pencil-square
-            description: Our copywriters create clear, engaging messages designed to inform callers and promote your business.
-
+          icon: pencil-square
+          description: Our copywriters create clear, engaging messages designed to inform callers and promote your business.
         - name: You Choose Voice & Music
-            icon: musical-note
-            description: Select the voice talent and music style that best matches your company image.
-
+          icon: musical-note
+          description: Select the voice talent and music style that best matches your company image.
         - name: We Produce the Audio
-            icon: adjustments-horizontal
-            description: Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
-
+          icon: adjustments-horizontal
+          description: Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
         - name: We Help You Get Set Up
-            icon: cloud-arrow-up
-            description: Once approved, your finished audio is prepared for your phone system or chosen platform.
+          icon: cloud-arrow-up
+          description: Once approved, your finished audio is prepared for your phone system or chosen platform.
     design:
         columns: "3"
 
@@ -122,6 +113,6 @@ sections:
         title: Ready to Improve How Your Business Sounds?
         text: Whether you need on-hold messages, IVR greetings, radio ads, or in-store announcements, we can help you create professional audio that makes the right impression.
         button:
-        text: Request a Quote
-        url: /contact
+            text: Request a Quote
+            url: /contact
 ---
