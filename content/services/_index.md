@@ -4,29 +4,14 @@ date: 2026-04-25
 type: landing
 
 sections:
-  - block: hero
-    content:
-      title: Professional Audio Messaging Services
-      text: From on-hold messages to auto-attendant greetings, IVR recordings, radio commercials, and in-store announcements, we help your business sound professional at every customer touchpoint.
-      primary_action:
-        text: "Request a Quote"
-        url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
-        icon: rocket-launch
-      secondary_action:
-        text: "Learn More"
-        url: "https://docs.hugoblox.com"
-      announcement:
-        text: "🎉 New features available now!"
-        link:
-          text: "Read more"
-          url: "https://example.com/news"
-    design:
-      background:
-        color: ""
-        gradient_start: "#4f46e5"
-        gradient_end: "#7c3aed"
-        text_color_light: true
-
+#   - block: hero
+#     content:
+#       title: Professional Audio Messaging Services
+#       text: From on-hold messages to auto-attendant greetings, IVR recordings, radio commercials, and in-store announcements, we help your business sound professional at every customer touchpoint.
+#       primary_action:
+#         text: "Request a Quote"
+#         url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
+#         icon: rocket-launch
   - block: features
     id: services-2
     content:
@@ -46,36 +31,59 @@ sections:
           icon: speaker-wave
           description: In-store announcements that promote offers, highlight products, and influence customers while they are already in your business.
         - name: Call Caddy
-          icon: headset
+          icon: megaphone
           description: Help every call sound professional, even when your team is busy, with recorded messages and call support options.
         - name: Custom Voice Production
           icon: microphone
           description: Professional voice recordings for phone systems, websites, presentations, training materials, and business announcements.
     design:
         columns: "3"
-  - block: features
-    id: process
+#   - block: features
+#     id: process
+#     content:
+#         title: How It Works
+#         text: Getting professional audio for your business is simple.
+#         items:
+#         - name: We Learn About Your Business
+#           icon: chat-bubble-left-right
+#           description: We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
+#         - name: We Write Your Script
+#           icon: pencil-square
+#           description: Our copywriters create clear, engaging messages designed to inform callers and promote your business.
+#         - name: You Choose Voice & Music
+#           icon: musical-note
+#           description: Select the voice talent and music style that best matches your company image.
+#         - name: We Produce the Audio
+#           icon: adjustments-horizontal
+#           description: Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
+#         - name: We Help You Get Set Up
+#           icon: cloud-arrow-up
+#           description: Once approved, your finished audio is prepared for your phone system or chosen platform.
+#     design:
+#         columns: "1"
+  - block: markdown
     content:
-        title: How It Works
-        text: Getting professional audio for your business is simple.
-        items:
-        - name: We Learn About Your Business
-          icon: chat-bubble-left-right
-          description: We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
-        - name: We Write Your Script
-          icon: pencil-square
-          description: Our copywriters create clear, engaging messages designed to inform callers and promote your business.
-        - name: You Choose Voice & Music
-          icon: musical-note
-          description: Select the voice talent and music style that best matches your company image.
-        - name: We Produce the Audio
-          icon: adjustments-horizontal
-          description: Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
-        - name: We Help You Get Set Up
-          icon: cloud-arrow-up
-          description: Once approved, your finished audio is prepared for your phone system or chosen platform.
+      title: How It Works
+      subtitle: "Getting professional audio for your business is simple."
+      text: |
+            **1. We Learn About Your Business -**
+            We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
+
+            **2. We Write Your Script -**
+            Our copywriters create clear, engaging messages designed to inform callers and promote your business.
+
+            **3. You Choose Voice & Music -**
+            Select the voice talent and music style that best matches your company image.
+
+            **4. We Produce the Audio -**
+            Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
+
+            **5. We Help You Get Set Up -**
+            Once approved, your finished audio is prepared for your phone system or chosen platform.
     design:
-        columns: "3"
+      columns: "1"
+      background:
+        color: "white" 
   - block: cta-card
     content:
         title: Ready to Improve How Your Business Sounds?
