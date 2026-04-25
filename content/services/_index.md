@@ -35,23 +35,18 @@ sections:
       - name: On-Hold Messages
         icon: phone
         description: Custom on-hold messaging that keeps callers engaged, promotes your products and services, and helps reduce hang-ups.
-
       - name: Auto-Attendant Greetings & IVR
         icon: queue-list
         description: Clear, professional recordings for day greetings, after-hours messages, menus, call routing, and voicemail systems.
-
       - name: Radio Commercials
         icon: radio
         description: Professionally written and produced radio ads with quality voiceovers, music, and production to help your message stand out.
-
       - name: Overhead Store Announcements
         icon: speaker-wave
         description: In-store announcements that promote offers, highlight products, and influence customers while they are already in your business.
-
       - name: Call Caddy
         icon: headset
         description: Help every call sound professional, even when your team is busy, with recorded messages and call support options.
-
       - name: Custom Voice Production
         icon: microphone
         description: Professional voice recordings for phone systems, websites, presentations, training materials, and business announcements.
@@ -106,7 +101,6 @@ sections:
           description: Once approved, your finished audio is prepared for your phone system or chosen platform.
     design:
         columns: "3"
-
   - block: cta-card
     id: contact
     content:
