@@ -4,6 +4,27 @@ date: 2023-10-24
 type: landing
 
 sections:
+  - block: cta-image-paragraph
+    id: solutions
+    content:
+      items:
+        - title: Why On-Hold Marketing?
+          # text: As easy as 1, 2, 3!
+          # feature_icon: check
+          feature_icon: bolt
+          features:
+            - Most businesses spend heavily on advertising to make the phone ring—but very little on what happens when customers call.
+            - "When callers are met with silence, poor music, or outdated messaging, many simply hang up—and some never call back."
+            - "Professional on-hold marketing helps you keep callers engaged, improve customer experience, and turn waiting time into a powerful sales and branding opportunity."
+            - Every call is a chance to inform, reassure, and sell.
+          # Upload image to `assets/media/` and reference the filename here
+          image: coffee.jpg
+          button:
+            text: Get Your Free Quote
+            url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
+    design:
+      # Section background color (CSS class)
+      css_class: "bg-gray-100 dark:bg-gray-900"
   # - block: hero
   #   content:
   #     title: Turn Hold Time Into Sales Opportunities
@@ -49,28 +70,6 @@ sections:
       # Reduce spacing
       spacing:
         padding: ["1rem", 0, "1rem", 0]
-  - block: cta-image-paragraph
-    id: solutions
-    content:
-      items:
-        - title: Why On-Hold Marketing?
-          # text: As easy as 1, 2, 3!
-          # feature_icon: check
-          feature_icon: bolt
-          features:
-            - Most businesses spend heavily on advertising to make the phone ring—but very little on what happens when customers call.
-            - "When callers are met with silence, poor music, or outdated messaging, many simply hang up—and some never call back."
-            - "Professional on-hold marketing helps you keep callers engaged, improve customer experience, and turn waiting time into a powerful sales and branding opportunity."
-            - Every call is a chance to inform, reassure, and sell.
-          # Upload image to `assets/media/` and reference the filename here
-          image: coffee.jpg
-          button:
-            text: Get Your Free Quote
-            url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
-    design:
-      # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
-  
   - block: features
     id: features
     content:

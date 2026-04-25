@@ -23,9 +23,9 @@ sections:
           url: "/audio-showcase/messages/" # Link to a sub-page for messages
   - block: logos
     content:
-      title: Our Partners & Collaborators
-      subtitle: Working with leading institutions worldwide
-      text: We collaborate with top universities and research centers
+      title: Explore Our Audio Collection
+      subtitle: Listen to a variety of audio samples across different categories.
+      text:
       logos:
         - name: Music
           image: coffee.jpg
@@ -37,11 +37,11 @@ sections:
           description: Discover a range of voice talent for narrations, promos, and more.
         - name: Messages
           image: coffee.jpg
-          url: content/audio-showcase/messages.md
+          url: /audio-showcase/messages
           description: Pre-recorded messages for on-hold, public address, and radio.
     design:
-      display_mode: grid
-      css_class: "bg-gray-50 dark:bg-gray-900"
+      display_mode: marquee
+      # css_class: "bg-gray-50 dark:bg-gray-900"
   # - block: cta-button-list
   #   content:
   #     # Need a custom icon?
