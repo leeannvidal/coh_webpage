@@ -1,6 +1,7 @@
 ---
 title: "Audio Showcase"
 type: landing
+
 sections:
   - block: features
     id: audio-categories # Assign an ID for internal linking
@@ -20,20 +21,21 @@ sections:
           icon: speaker-wave
           description: "Pre-recorded messages for on-hold, public address, and radio."
           url: "/audio-showcase/messages/" # Link to a sub-page for messages
-  - block: cta-button-list
-    content:
-      # Need a custom icon?
-      # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
-      buttons:
-        - text: Music
-          icon: musical-note
-          url: ""
-        - text: Voice
-          icon: microphone
-          url: https://youtube.com
-        - text: Messages
-          icon: speaker-wave
-          url: https://linkedin.com
+#   - block: cta-button-list
+#     content:
+#       # Need a custom icon?
+#       # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
+#       buttons:
+#         - text: Music
+#           icon: musical-note
+#           url: " "
+#         - text: Voice
+#           icon: microphone
+#           url: https://youtube.com
+#         - text: Messages
+#           icon: speaker-wave
+#           url: https://linkedin.com
+
 ---
 
 ## Music Samples
