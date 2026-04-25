@@ -9,7 +9,7 @@ sections:
       text: "Listen to a variety of audio samples across different categories."
       items:
         - name: "Music"
-          icon: "music" # Using a generic music icon, you can explore other options if available
+          icon: musical-note
           description: "Dive into instrumental tracks, classical pieces, and modern compositions."
           url: "/audio-showcase/music/" # Link to a sub-page for music
         - name: "Voice"
@@ -17,7 +17,7 @@ sections:
           description: "Discover a range of voice talent for narrations, promos, and more."
           url: "/audio-showcase/voice/" # Link to a sub-page for voice
         - name: "Messages"
-          icon: "volume-up" # Using a generic volume icon
+          icon: speaker-wave
           description: "Pre-recorded messages for on-hold, public address, and radio."
           url: "/audio-showcase/messages/" # Link to a sub-page for messages
   - block: cta-button-list
@@ -25,14 +25,14 @@ sections:
       # Need a custom icon?
       # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
       buttons:
-        - text: Read my latest paper on LLMs
-          icon: academicons/arxiv
+        - text: Music
+          icon: musical-note
           url: ""
-        - text: Watch my new YouTube video to achieve 20x productivity
-          icon: brands/youtube
+        - text: Voice
+          icon: microphone
           url: https://youtube.com
-        - text: Connect with me on LinkedIn
-          icon: brands/linkedin
+        - text: Messages
+          icon: speaker-wave
           url: https://linkedin.com
 ---
 
