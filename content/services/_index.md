@@ -26,34 +26,9 @@ sections:
         gradient_start: "#4f46e5"
         gradient_end: "#7c3aed"
         text_color_light: true
+
   - block: features
-    id: services
-    content:
-    title: Our Services
-    text: Professional voice, music, and messaging solutions designed to improve customer experience, promote your business, and strengthen your brand.
-    items:
-      - name: On-Hold Messages
-        icon: phone
-        description: Custom on-hold messaging that keeps callers engaged, promotes your products and services, and helps reduce hang-ups.
-      - name: Auto-Attendant Greetings & IVR
-        icon: queue-list
-        description: Clear, professional recordings for day greetings, after-hours messages, menus, call routing, and voicemail systems.
-      - name: Radio Commercials
-        icon: radio
-        description: Professionally written and produced radio ads with quality voiceovers, music, and production to help your message stand out.
-      - name: Overhead Store Announcements
-        icon: speaker-wave
-        description: In-store announcements that promote offers, highlight products, and influence customers while they are already in your business.
-      - name: Call Caddy
-        icon: headset
-        description: Help every call sound professional, even when your team is busy, with recorded messages and call support options.
-      - name: Custom Voice Production
-        icon: microphone
-        description: Professional voice recordings for phone systems, websites, presentations, training materials, and business announcements.
-    design:
-        columns: "3"
-  - block: features
-    id: services
+    id: services-2
     content:
         title: Our Services
         text: Professional voice, music, and messaging solutions designed to improve customer experience, promote your business, and strengthen your brand.
@@ -102,7 +77,6 @@ sections:
     design:
         columns: "3"
   - block: cta-card
-    id: contact
     content:
         title: Ready to Improve How Your Business Sounds?
         text: Whether you need on-hold messages, IVR greetings, radio ads, or in-store announcements, we can help you create professional audio that makes the right impression.
