@@ -86,37 +86,18 @@ sections:
         - name: Turn hold time into valuable marketing time
           icon: clock
           description: Transform dead air into productive time that informs, reassures, and converts callers.
+        - name: Promote Your Company Website
+          icon: globe-alt
+          description: Encourage callers to visit your website for more information, online bookings, and additional services.
+        - name: Increase Call Satisfaction
+          icon: hand-thumb-up
+          description: Keep callers informed and reassured while they wait, creating a more positive and professional customer experience.
     design:
       columns: "3"
         #   background:
         #     color: "gray-50"
-  - block: features
-    id: services
-    content:
-      title: Services
-    #   text: Turn every caller’s waiting time into a valuable marketing opportunity.
-      items:
-        - name: Professional Script Writing
-          icon: check
-        # - name: Professional Script Writing
-        #   icon: check-circle
-        - name: Voiceover Production
-          icon: check-badge
-        - name: Licensed Music
-          icon: brands/leaflet
-        - name: Custom On-Hold Messaging
-          icon: brands/leaflet
-        - name: Seasonal Updates
-          icon: brands/leaflet
-        - name: Multi-location Solutions
-          icon: brands/leaflet
-    design:
-      columns: "2"
-      background:
-        color: "gray-50"
-
   - block: tech-stack
-    id: skills
+    id: services
     content:
         title: "Services"
         categories:
