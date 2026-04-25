@@ -8,10 +8,8 @@ sections:
     content:
       title:
       text: |
-        If you’d like to discuss your on-hold messaging requirements, we’d love to hear from you You can call us directly to speak with our team, or send us an email using the contact form below and we’ll get back to you as soon as possible. 
-        
-
-        Whether you’re looking for professional on-hold messages, music, or a complete refresh of your caller experience, we’re here to help.
+        <p> If you’d like to discuss your on-hold messaging requirements, we’d love to hear from you You can call us directly to speak with our team, or send us an email using the contact form below and we’ll get back to you as soon as possible. </p>
+        <p> Whether you’re looking for professional on-hold messages, music, or a complete refresh of your caller experience, we’re here to help. </p>
       button:
         text: Email us
         url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
@@ -37,7 +35,8 @@ sections:
       prospective:
         title: Let’s Talk
         text: |
-          If you’d like to discuss your on-hold messaging requirements, we’d love to hear from you You can call us directly to speak with our team, or send us an email using the contact form below and we’ll get back to you as soon as possible. Whether you’re looking for professional on-hold messages, music, or a complete refresh of your caller experience, we’re here to help.
+          <p> If you’d like to discuss your on-hold messaging requirements, we’d love to hear from you You can call us directly to speak with our team, or send us an email using the contact form below and we’ll get back to you as soon as possible. </p>
+          <p> Whether you’re looking for professional on-hold messages, music, or a complete refresh of your caller experience, we’re here to help. </p>
         button:
           text: Email us
           url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
