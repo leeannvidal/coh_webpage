@@ -46,9 +46,9 @@ sections:
         - name: National & International Clients
           icon: globe-alt
           description: Supporting businesses across the United States and internationally with professional messaging solutions.
-        - name: Professional Quality
-          icon: shield-check
-          description: High-quality voice production, licensed music, and polished messaging tailored to your business.
+        # - name: Professional Quality
+        #   icon: shield-check
+        #   description: High-quality voice production, licensed music, and polished messaging tailored to your business.
         - name: Results That Matter
           icon: chart-bar
           description: Helping businesses reduce hang-ups, improve caller satisfaction, and create more sales opportunities.
