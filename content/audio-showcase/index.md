@@ -20,7 +20,7 @@ sections:
           icon: "volume-up" # Using a generic volume icon
           description: "Pre-recorded messages for on-hold, public address, and radio."
           url: "/audio-showcase/messages/" # Link to a sub-page for messages
-  block: cta-button-list
+  - block: cta-button-list
     content:
       # Need a custom icon?
       # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
