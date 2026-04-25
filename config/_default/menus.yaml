@@ -12,9 +12,9 @@ main:
   - name: About Us
     url: about/
     weight: 20
-  - name: Services
-    url: services/
-    weight: 30
+  # - name: Services
+  #   url: services/
+  #   weight: 30
   - name: Voice and Music
     url: audio-showcase/
     weight: 40
