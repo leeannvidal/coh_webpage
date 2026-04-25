@@ -117,28 +117,28 @@ sections:
       columns: "3"
         #   background:
         #     color: "gray-50"
-  - block: tech-stack
-    id: services
-    content:
-        title: "Services"
-        categories:
-            - name: Services
-              items:
-                - name: Professional Script Writing
-                  icon: brands/leaflet
-                - name: Voiceover Production
-                  icon: brands/leaflet
-                - name: Licensed Music
-                  icon: brands/leaflet
-                - name: Custom On-Hold Messaging
-                  icon: brands/leaflet
-                - name: Seasonal Updates
-                  icon: brands/leaflet
-                - name: Multi-location Solutions
-                  icon: brands/leaflet
-    design:
-        style: list
-        show_levels: false
+  # - block: tech-stack
+  #   id: services
+  #   content:
+  #       title: "Services"
+  #       categories:
+  #           - name: Services
+  #             items:
+  #               - name: Professional Script Writing
+  #                 icon: brands/leaflet
+  #               - name: Voiceover Production
+  #                 icon: brands/leaflet
+  #               - name: Licensed Music
+  #                 icon: brands/leaflet
+  #               - name: Custom On-Hold Messaging
+  #                 icon: brands/leaflet
+  #               - name: Seasonal Updates
+  #                 icon: brands/leaflet
+  #               - name: Multi-location Solutions
+  #                 icon: brands/leaflet
+  #   design:
+  #       style: list
+  #       show_levels: false
   - block: cta-card
     content:
     #   title: Ready to Upgrade Your Caller Experience?
