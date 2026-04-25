@@ -3,24 +3,33 @@
 #   The `weight` parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: Example
     url: /#top
     weight: 10
-  - name: Features
-    url: /#features
+  - name: Home
+    url: /home
+    weight: 15
+  - name: About Us
+    url: about/
     weight: 20
-  - name: Solutions
-    url: /#solutions
+  - name: Services
+    url: services/
     weight: 30
+  - name: Voice and Music
+    url: audio-showcase/
+    weight: 40
+  - name: Contact Us
+    url: contact-us/
+    weight: 50
   - name: Changelog
     url: /changelog/
     weight: 35
-  - name: Resources
-    weight: 40
-    hasChildren: true
-  - parent: Resources
-    name: Blog
-    url: blog/
+  # - name: Resources
+  #   weight: 40
+  #   hasChildren: true
+  # - parent: Resources
+  #   name: Blog
+  #   url: blog/
 
 # Footer links (4-column layout)
 #   Top-level items become column headings, children become links.
