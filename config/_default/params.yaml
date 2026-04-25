@@ -1,36 +1,74 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGOBLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# Documentation: https://docs.hugoblox.com/
+# ══════════════════════════════════════════════════════════════════════════════
 hugoblox:
   schema: "2.0"
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # IDENTITY
+  # ────────────────────────────────────────────────────────────────────────────
   identity:
-    name: ""
-    type: local_business
+    name: "Communications On Hold"
+    organization: ""
+    type: local_business # person | organization | local_business
     tagline: ""
     description: ""
+    social:
+      twitter: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # THEME
+  # ────────────────────────────────────────────────────────────────────────────
   theme:
-    mode: system
-    pack: default
+    mode: light # light | dark | system
+    pack: "default"
     colors:
       primary: ""
       secondary: ""
       neutral: ""
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # TYPOGRAPHY
+  # ────────────────────────────────────────────────────────────────────────────
   typography:
-    font: sans
-    size: md
+    pack: "system"
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # LAYOUT
+  # ────────────────────────────────────────────────────────────────────────────
   layout:
-    radius: md
-    spacing: comfortable
-    avatar_shape: circle
+    radius: "md" # none | sm | md | lg | full
+    spacing: "spacious" # compact | comfortable | spacious
+    avatar_shape: circle # circle | square | rounded
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # HEADER
+  # ────────────────────────────────────────────────────────────────────────────
   header:
     enable: true
-    style: navbar
+    style: navbar # navbar | navbar-simple | minimal
     sticky: true
-    align: center
-    search: true
-    theme_toggle: true
+    align: center # left | center | right
+    search: false
+    theme_toggle: false
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # FOOTER
+  # ────────────────────────────────────────────────────────────────────────────
   footer:
-    style: minimal
-    language_switcher: true
+    style: minimal # minimal | columns | centered
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # COPYRIGHT
+  # ────────────────────────────────────────────────────────────────────────────
   copyright:
-    notice: © {year} {name}
+    notice: "© {year} {name}"
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # CONTENT
+  # ────────────────────────────────────────────────────────────────────────────
   content:
     math:
       enable: false
@@ -38,5 +76,32 @@ hugoblox:
       enable: true
     reading_time:
       enable: true
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # SEARCH
+  # ────────────────────────────────────────────────────────────────────────────
   search:
-    enable: true
+    enable: false
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # LOCALE
+  # ────────────────────────────────────────────────────────────────────────────
+  locale:
+    date_format: "Jan 2, 2006"
+    time_format: "3:04 PM"
+    address_format: en-us
+
+  # ────────────────────────────────────────────────────────────────────────────
+  # PREMIUM
+  # Premium features and creator program (affiliates)
+  # ────────────────────────────────────────────────────────────────────────────
+  pro:
+    # Hide "Powered by HugoBlox" attribution
+    # Requires: HugoBlox Premium to support HugoBlox via alternative means
+    # Note: Even with Premium, you can keep this false to support open source!
+    # Get Premium: https://hugoblox.com/premium
+    hide_attribution: true
+    
+    # Affiliate referral code for rewards program
+    # Join affiliate program: https://hugoblox.com/affiliates
+    affiliate_code: ""
