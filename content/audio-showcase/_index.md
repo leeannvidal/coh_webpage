@@ -21,20 +21,41 @@ sections:
           icon: speaker-wave
           description: "Pre-recorded messages for on-hold, public address, and radio."
           url: "/audio-showcase/messages/" # Link to a sub-page for messages
-#   - block: cta-button-list
-#     content:
-#       # Need a custom icon?
-#       # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
-#       buttons:
-#         - text: Music
-#           icon: musical-note
-#           url: " "
-#         - text: Voice
-#           icon: microphone
-#           url: https://youtube.com
-#         - text: Messages
-#           icon: speaker-wave
-#           url: https://linkedin.com
+  - block: logos
+    content:
+      title: Our Partners & Collaborators
+      subtitle: Working with leading institutions worldwide
+      text: We collaborate with top universities and research centers
+      logos:
+        - name: Music
+          image: coffee.jpg
+          url: /audio-showcase/music/
+          description: Dive into instrumental tracks, classical pieces, and modern compositions.
+        - name: Voice
+          image: coffee.jpg
+          url: /audio-showcase/voice/
+          description: Discover a range of voice talent for narrations, promos, and more.
+        - name: Messages
+          image: coffee.jpg
+          url: content/audio-showcase/messages.md
+          description: Pre-recorded messages for on-hold, public address, and radio.
+    design:
+      display_mode: grid
+      css_class: "bg-gray-50 dark:bg-gray-900"
+  # - block: cta-button-list
+  #   content:
+  #     # Need a custom icon?
+  #     # Add an SVG image to the `assets/media/icons/` folder and reference it in the `icon` field below
+  #     buttons:
+  #       - text: Music
+  #         icon: musical-note
+  #         url: " "
+  #       - text: Voice
+  #         icon: microphone
+  #         url: https://youtube.com
+  #       - text: Messages
+  #         icon: speaker-wave
+  #         url: https://linkedin.com
 
 ---
 
