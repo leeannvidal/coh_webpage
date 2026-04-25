@@ -27,7 +27,7 @@ sections:
       buttons:
         - text: Read my latest paper on LLMs
           icon: academicons/arxiv
-          url: https://arxiv.org/abs/2304.01852
+          url: ""
         - text: Watch my new YouTube video to achieve 20x productivity
           icon: brands/youtube
           url: https://youtube.com
