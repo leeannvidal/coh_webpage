@@ -53,8 +53,8 @@ sections:
     id: solutions
     content:
       items:
-        - title: Why On-Hold Messaging?
-          text: As easy as 1, 2, 3!
+        - title: Why On-Hold Marketing?
+          # text: As easy as 1, 2, 3!
           # feature_icon: check
           feature_icon: bolt
           features:

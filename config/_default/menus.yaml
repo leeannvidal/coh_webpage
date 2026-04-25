@@ -21,9 +21,9 @@ main:
   - name: Contact Us
     url: contact-us/
     weight: 50
-  - name: Changelog
-    url: /changelog/
-    weight: 35
+  # - name: Changelog
+  #   url: /changelog/
+  #   weight: 35
   # - name: Resources
   #   weight: 40
   #   hasChildren: true
