@@ -30,12 +30,12 @@ sections:
         - question: Music
           answer: |
             Dive into instrumental tracks, classical pieces, and modern compositions.
-            {{< button url="/audio-showcase/music/" style="outline" rounded="full" icon="speaker-wave" icon_position="right" >}}Music{{< /button >}}
+            {{< button url="/audio-showcase/music/" style="outline" rounded="full" icon="musical-note" icon_position="right" >}}Music{{< /button >}}
         
         - question: Voice
           answer: |
             Discover a range of voice talent for narrations, promos, and more.
-            {{< button url="/audio-showcase/voice/" style="outline" rounded="full" icon="speaker-wave" icon_position="right" >}}Voice{{< /button >}}
+            {{< button url="/audio-showcase/voice/" style="outline" rounded="full" icon="microphone" icon_position="right" >}}Voice{{< /button >}}
         
         - question: Messages
           answer: |
