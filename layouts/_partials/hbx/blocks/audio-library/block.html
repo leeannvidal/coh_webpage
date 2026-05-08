@@ -1,0 +1,151 @@
+{{/* Hugo Blox: Audio Library Accordion */}}
+
+{{ $block := . }}
+{{ $content := $block.wcBlock.content }}
+{{ $design := $block.wcBlock.design }}
+
+{{ $title := default "Voice and Music" $content.title }}
+{{ $subtitle := default "" $content.subtitle }}
+{{ $sections := $content.sections }}
+
+<div class="container mx-auto px-4 py-12">
+  {{ with $title }}
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-3 text-gray-900 dark:text-white">
+      {{ . | markdownify }}
+    </h2>
+  {{ end }}
+
+  {{ with $subtitle }}
+    <p class="max-w-3xl mx-auto text-center text-gray-600 dark:text-gray-300 mb-10">
+      {{ . | markdownify }}
+    </p>
+  {{ end }}
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    {{ range $section := $sections }}
+      <section class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 overflow-hidden">
+
+        <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+          <h3 class="text-2xl font-bold text-primary-700 dark:text-primary-300">
+            {{ $section.title | markdownify }}
+          </h3>
+
+          {{ with $section.description }}
+            <p class="mt-2 text-gray-600 dark:text-gray-300">
+              {{ . | markdownify }}
+            </p>
+          {{ end }}
+        </div>
+
+        <div class="p-4 space-y-4">
+          {{ range $category := $section.categories }}
+
+            <details class="group rounded-xl border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/40 overflow-hidden">
+
+              <summary class="cursor-pointer list-none px-4 py-3 flex items-center justify-between gap-4 font-semibold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors">
+                <span>{{ $category.title | markdownify }}</span>
+
+                <span class="text-primary-600 dark:text-primary-400 transition-transform duration-200 group-open:rotate-180">
+                  ▼
+                </span>
+              </summary>
+
+              <div class="px-4 pb-4 pt-2 space-y-4">
+
+                {{ with $category.description }}
+                  <p class="text-sm text-gray-600 dark:text-gray-400">
+                    {{ . | markdownify }}
+                  </p>
+                {{ end }}
+
+                {{ if $category.subcategories }}
+
+                  {{ range $subcategory := $category.subcategories }}
+
+                    <details class="group rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 overflow-hidden">
+
+                      <summary class="cursor-pointer list-none px-4 py-3 flex items-center justify-between gap-4 font-medium text-gray-800 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <span>{{ $subcategory.title | markdownify }}</span>
+
+                        <span class="text-primary-600 dark:text-primary-400 transition-transform duration-200 group-open:rotate-180">
+                          ▼
+                        </span>
+                      </summary>
+
+                      <div class="p-4 space-y-4">
+
+                        {{ with $subcategory.description }}
+                          <p class="text-sm text-gray-600 dark:text-gray-400">
+                            {{ . | markdownify }}
+                          </p>
+                        {{ end }}
+
+                        {{ range $audio := $subcategory.audios }}
+                          {{ $audioTitle := default "Audio sample" $audio.title }}
+                          {{ $audioFile := $audio.file }}
+
+                          {{ if $audioFile }}
+                            <div class="rounded-lg bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 p-4">
+                              <p class="font-medium text-gray-900 dark:text-white mb-2">
+                                {{ $audioTitle | markdownify }}
+                              </p>
+
+                              {{ with $audio.description }}
+                                <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                                  {{ . | markdownify }}
+                                </p>
+                              {{ end }}
+
+                              <audio controls preload="none" class="w-full">
+                                <source src="{{ $audioFile | relURL }}" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                              </audio>
+                            </div>
+                          {{ end }}
+                        {{ end }}
+
+                      </div>
+
+                    </details>
+
+                  {{ end }}
+
+                {{ else }}
+
+                  {{ range $audio := $category.audios }}
+                    {{ $audioTitle := default "Audio sample" $audio.title }}
+                    {{ $audioFile := $audio.file }}
+
+                    {{ if $audioFile }}
+                      <div class="rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4">
+                        <p class="font-medium text-gray-900 dark:text-white mb-2">
+                          {{ $audioTitle | markdownify }}
+                        </p>
+
+                        {{ with $audio.description }}
+                          <p class="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                            {{ . | markdownify }}
+                          </p>
+                        {{ end }}
+
+                        <audio controls preload="none" class="w-full">
+                          <source src="{{ $audioFile | relURL }}" type="audio/mpeg">
+                          Your browser does not support the audio element.
+                        </audio>
+                      </div>
+                    {{ end }}
+                  {{ end }}
+
+                {{ end }}
+
+              </div>
+
+            </details>
+
+          {{ end }}
+        </div>
+
+      </section>
+    {{ end }}
+  </div>
+</div>
