@@ -23,7 +23,8 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   theme:
     mode: light # light | dark | system
-    pack: "default"
+    pack: "custom_theme" # name of theme pack to use (defined in data/themes/)
+    # pack: "default"
     colors:
       primary: ""
       secondary: ""

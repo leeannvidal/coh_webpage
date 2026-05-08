@@ -1,0 +1,39 @@
+hugoblox:
+  meta:
+    format: hugoblox-theme@1
+    name: blue-white-brand
+    vendor: LA
+    version: 1.0.0
+    license: MIT
+    description: Based on LA's Wix Website
+  type: dual
+
+  light:
+    colors:
+      primary: "#0A57B7"
+      secondary: "#E8F1FF"
+      neutral: "#6B7280"
+    surfaces:
+      background: "#FFFFFF"
+      foreground: "#111827"
+      header:
+        background: "#F1F5F9"
+        foreground: "#0A57B7"
+      footer:
+        background: "#0A57B7"
+        foreground: "#FFFFFF"
+
+  dark:
+    colors:
+      primary: "#3B82F6"
+      secondary: "#93C5FD"
+      neutral: "#E5E7EB"
+    surfaces:
+      background: "#050B14"
+      foreground: "#F9FAFB"
+      header:
+        background: "#071A33"
+        foreground: "#FFFFFF"
+      footer:
+        background: "#020617"
+        foreground: "#E5E7EB"

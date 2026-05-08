@@ -38,6 +38,8 @@ sections:
           description: Professional voice recordings for phone systems, websites, presentations, training materials, and business announcements.
     design:
         columns: "3"
+        spacing:
+          padding: ["0", 0, "0", "0"]
 #   - block: features
 #     id: process
 #     content:
@@ -61,29 +63,52 @@ sections:
 #           description: Once approved, your finished audio is prepared for your phone system or chosen platform.
 #     design:
 #         columns: "1"
-  - block: markdown
+  # - block: markdown #  one that worked
+  #   content:
+  #     title: How It Works
+  #     subtitle: "Getting professional audio for your business is simple."
+  #     text: |
+  #           **1. We Learn About Your Business -**
+  #           We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
+
+  #           **2. We Write Your Script -**
+  #           Our copywriters create clear, engaging messages designed to inform callers and promote your business.
+
+  #           **3. You Choose Voice & Music -**
+  #           Select the voice talent and music style that best matches your company image.
+
+  #           **4. We Produce the Audio -**
+  #           Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
+
+  #           **5. We Help You Get Set Up -**
+  #           Once approved, your finished audio is prepared for your phone system or chosen platform.
+  #   design:
+  #     columns: "1"
+  #     background:
+  #       color: "white" 
+  - block: cta-image-paragraph
     content:
-      title: How It Works
-      subtitle: "Getting professional audio for your business is simple."
-      text: |
-            **1. We Learn About Your Business -**
-            We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
-
+      items:
+        - title:
+        - title: How It Works
+          # text: Getting professional audio for your business is simple
+          feature_icon: ""
+          # feature_icon: bolt
+          features:
+            "**1. We Learn About Your Business -**
+            We listen to your goals, services, promotions, and brand style so your message feels tailored to your company. <br><br>
             **2. We Write Your Script -**
-            Our copywriters create clear, engaging messages designed to inform callers and promote your business.
-
-            **3. You Choose Voice & Music -**
-            Select the voice talent and music style that best matches your company image.
-
+            Our copywriters create clear, engaging messages designed to inform callers and promote your business. <br><br>
+            **3. You Choose Voice & Music -** 
+            Select the voice talent and music style that best matches your company image. <br><br>
             **4. We Produce the Audio -**
-            Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
-
+            Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback. <br><br>
             **5. We Help You Get Set Up -**
-            Once approved, your finished audio is prepared for your phone system or chosen platform.
+            Once approved, your finished audio is prepared for your phone system or chosen platform."
+          image: images/coh_services.png
     design:
-      columns: "1"
-      background:
-        color: "white" 
+      spacing:
+        padding: ["0", 0, "0", "0"]
   - block: cta-card
     content:
         title: Ready to Improve How Your Business Sounds?
@@ -91,4 +116,11 @@ sections:
         button:
             text: Request a Quote
             url: /contact
+    design:
+      spacing:
+        padding: ["0", 0, "0", "0"]
+      card:
+        css_class: 'glassmorphism-primary glass-ring glass-shadow text-white'
+        text_color: 'light' # auto|light|dark
+        overlay_opacity: 0.15 # 0.0-1.0 for contrast control
 ---

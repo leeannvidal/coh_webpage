@@ -4,27 +4,65 @@ date: 2023-10-24
 type: landing
 
 sections:
-  - block: markdown
+  - block: cta-image-paragraph
     content:
-      title: About Communications On Hold
-      subtitle: Personal Service. Professional Results.
-      text: |-
-         Since 1995, we’ve helped businesses turn hold time into a powerful marketing opportunity through professional on-hold messaging, voice production, and customer communication solutions. 
-         
-         As a woman-owned business, we believe great service starts with real people, personal attention, and treating every client like they matter—because they do.
+      items:
+        # - title:
+        - title: About Communications On Hold
+          text: Personal Service. Professional Results.
+          feature_icon: ""
+          # feature_icon: bolt
+          features:
+            "Since 1995, we’ve helped businesses turn hold time into a powerful marketing opportunity through professional on-hold messaging, voice production, and customer communication solutions.  <br><br>
+            As a woman-owned business, we believe great service starts with real people, personal attention, and treating every client like they matter—because they do."
+          image: images/coh_about_us.png
+        # - title: Who We Are
+        #   feature_icon: ""
+        #   # feature_icon: bolt
+        #   features:
+        #     "Communications On Hold isn’t the largest on-hold messaging company—and that’s by design. <br><br>
+        #     We’ve built our business on personal service, exceptional quality, and lasting client relationships rather than volume alone. This allows us to give every client the attention they deserve, whether they’re a local business or an international company. <br><br>
+        #     We believe your callers should feel valued from the very first moment they contact you—and that starts with professional, engaging on-hold messaging."
     design:
-      columns: '1'
-  - block: markdown
+      spacing:
+        padding: ["0", 0, "0", "0"]
+  - block: cta-card
     content:
-      title: Who We Are
-      subtitle:
-      text: |
-        Communications On Hold isn’t the largest on-hold messaging company—and that’s by design.
+        title: Who We Are
+        text: |
+          Communications On Hold isn’t the largest on-hold messaging company—and that’s by design. <br><br>
+          
+          We’ve built our business on personal service, exceptional quality, and lasting client relationships rather than volume alone. This allows us to give every client the attention they deserve, whether they’re a local business or an international company. <br><br>
+          
+          We believe your callers should feel valued from the very first moment they contact you—and that starts with professional, engaging on-hold messaging.
+    design:
+      spacing:
+        padding: ["0", 0, "0", "0"]
+      card:
+        css_class: "bg-primary-300"
+        css_style: ""
+        overlay_opacity: 0.15 # 0.0-1.0 for contrast control
+  # - block: markdown
+  #   content:
+  #     title: About Communications On Hold
+  #     subtitle: Personal Service. Professional Results.
+  #     text: |-
+  #        Since 1995, we’ve helped businesses turn hold time into a powerful marketing opportunity through professional on-hold messaging, voice production, and customer communication solutions. 
+         
+  #        As a woman-owned business, we believe great service starts with real people, personal attention, and treating every client like they matter—because they do.
+  #   design:
+  #     columns: '1'
+  # - block: markdown
+  #   content:
+  #     title: Who We Are
+  #     subtitle:
+  #     text: |
+  #       Communications On Hold isn’t the largest on-hold messaging company—and that’s by design.
 
-        We’ve built our business on personal service, exceptional quality, and lasting client relationships rather than volume alone. This allows us to give every client the attention they deserve, whether they’re a local business or an international company.
+  #       We’ve built our business on personal service, exceptional quality, and lasting client relationships rather than volume alone. This allows us to give every client the attention they deserve, whether they’re a local business or an international company.
 
-        We believe your callers should feel valued from the very first moment they contact you—and that starts with professional, engaging on-hold messaging.
-        Small company. Big results.
+  #       We believe your callers should feel valued from the very first moment they contact you—and that starts with professional, engaging on-hold messaging.
+  #       Small company. Big results.
   - block: features
     id: values
     content:

@@ -18,13 +18,16 @@ sections:
             - "Professional on-hold marketing helps you keep callers engaged, improve customer experience, and turn waiting time into a powerful sales and branding opportunity."
             - Every call is a chance to inform, reassure, and sell.
           # Upload image to `assets/media/` and reference the filename here
-          image: coffee.jpg
+          # image: coffee.jpg
+          image: images/studio_coh.png
           button:
             text: Get Your Free Quote
             url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
     design:
       # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
+      # css_class: "bg-gray-100 dark:bg-gray-900"
+      spacing:
+        padding: ["0", 0, "0", "0"]
   # - block: hero
   #   content:
   #     title: Turn Hold Time Into Sales Opportunities
@@ -66,10 +69,10 @@ sections:
             of marketing budgets focus on making the phone ring—not what happens next
     design:
       # Section background color (CSS class)
-      css_class: "bg-gray-100 dark:bg-gray-900"
+      # css_class: "bg-gray-100 dark:bg-gray-900"
       # Reduce spacing
       spacing:
-        padding: ["1rem", 0, "1rem", 0]
+        padding: ["0", 0, "0", 0]
   - block: features
     id: features
     content:
@@ -114,6 +117,8 @@ sections:
           description: Keep callers informed and reassured while they wait, creating a more positive and professional customer experience.
     design:
       columns: "3"
+      spacing:
+        padding: ["0", 0, "0", 0]
         #   background:
         #     color: "gray-50"
   # - block: tech-stack
@@ -147,6 +152,8 @@ sections:
         text: Get Your Free Quote
         url: /contact-us
     design:
+      spacing:
+        padding: ["0", 0, "0", 0]
       card:
         # Card background color (CSS class)
         css_class: "bg-primary-300"
