@@ -1,0 +1,9 @@
+
+/* ==========================================================================
+   IMAGE BORDER RADIUS
+   ========================================================================== */
+.cta-image-paragraph-block-container img {
+  border-radius: 26px;
+  border: 3px solid #0A57B7;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}

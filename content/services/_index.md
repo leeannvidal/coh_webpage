@@ -4,6 +4,18 @@ date: 2026-04-25
 type: landing
 
 sections:
+  - block: page-header
+    content:
+      title: "Our Services"
+      # title: "Coding Corner: <br>Tools & Resources"
+      subtitle: 
+    design:
+      background:
+        color: var(--color-primary-900)
+        # color: '#0A57B7'
+        text_color: '#F2F2F2'
+      spacing:
+        padding: ["1rem", "0", "1rem", "0"]
 #   - block: hero
 #     content:
 #       title: Professional Audio Messaging Services
@@ -15,7 +27,8 @@ sections:
   - block: features
     id: services-2
     content:
-        title: Our Services
+        # title: 
+        # title: Our Services
         text: Professional voice, music, and messaging solutions designed to improve customer experience, promote your business, and strengthen your brand.
         items:
         - name: On-Hold Messages
