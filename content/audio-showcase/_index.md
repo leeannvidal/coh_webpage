@@ -312,6 +312,8 @@ sections:
                   file: audio-showcase/audio/voice/Courtney.mp3
                 - title: Debbie
                   file: audio-showcase/audio/voice/Debbie.mp3
+                - title: Jaden
+                  file: audio-showcase/audio/voice/Jaden.mp3
                 - title: Jaime
                   file: audio-showcase/audio/voice/Jaime.mp3
                 - title: Joanne
@@ -324,6 +326,8 @@ sections:
                   file: audio-showcase/audio/voice/Lorna.mp3
                 - title: Mary
                   file: audio-showcase/audio/voice/Mary.mp3
+                - title: Paulie
+                  file: audio-showcase/audio/voice/Paulie.mp3
                 - title: Russian Marina
                   file: audio-showcase/audio/voice/Russian-Marina.mp3
 
@@ -333,16 +337,12 @@ sections:
                   file: audio-showcase/audio/voice/Chinese-Tony.mp3
                 - title: Doug
                   file: audio-showcase/audio/voice/Doug.mp3
-                - title: Jaden
-                  file: audio-showcase/audio/voice/Jaden.mp3
                 - title: Jim
                   file: audio-showcase/audio/voice/Jim.mp3
                 - title: Jon
                   file: audio-showcase/audio/voice/Jon.mp3
                 - title: Kevin
                   file: audio-showcase/audio/voice/Kevin.mp3
-                - title: Paulie
-                  file: audio-showcase/audio/voice/Paulie.mp3
 
         - title: Messages
           description: On-hold, overhead, public address, and radio message samples
