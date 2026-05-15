@@ -7,3 +7,121 @@
   border: 3px solid #0A57B7;
   box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
+
+
+/* ==========================================================================
+   TESTIMONIALS BLOCK SPACING AND LAYOUT
+   ========================================================================== */
+
+.compact-testimonials .py-8.px-4.mx-auto.max-w-screen-xl.sm\:py-16.lg\:px-6 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+.compact-testimonials .max-w-screen-md.mb-8.lg\:mb-16 {
+  margin-bottom: 0.5rem !important;
+}
+
+.compact-testimonials h2.mb-4 {
+  margin-bottom: 0.25rem !important;
+}
+
+/* Wider testimonial content */
+.compact-testimonials .max-w-screen-md.mx-auto {
+  max-width: 60rem !important;
+}
+
+/* ==========================================================================
+   SITE HEADER / NAVBAR FOUNDATION
+   ========================================================================== */
+
+#site-header {
+  --nav-chip-size: 3rem;
+}
+
+/* #site-header.header {
+  background-color: rgb(var(--color-secondary-600) / 0.75);
+} */
+
+#site-header.header {
+  /* Single transparent background using your theme color */
+  background: color-mix(in srgb, var(--color-secondary-600) 65%, transparent);
+  box-shadow: 0 4px 15px rgba(var(--color-neutral-900), 0.08);
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+}
+
+/* ==========================================================================
+   NAVIGATION LINKS
+   ========================================================================== */
+
+#site-header .nav-link {
+  /* border-radius: 999px;  */ /* Makes the link background a fully rounded pill shape */
+  border-radius: 10px;  /* Makes the link background slightly rounded */
+  /* padding-block: .55rem; /* Vertical padding (top and bottom) */
+  /* padding-inline: 1rem; */ /* Horizontal padding (left and right) */
+  padding-inline: .55rem;
+  transition:
+    color .32s ease,
+    background-color .42s ease,
+    box-shadow .42s ease,
+    transform .42s cubic-bezier(.22, 1, .36, 1);
+}
+
+#site-header .nav-link:hover,
+#site-header .nav-link:focus-visible {
+  background-color: rgba(93, 104, 138, .12);
+  color: rgba(15, 23, 42, .9);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 8%), inset 0 1px rgba(255, 255, 255, .75);
+  transform: translateY(-1px);
+}
+
+#site-header .nav-link.active {
+  background-color: rgba(93, 104, 138, 10%);
+  color: rgba(15, 23, 42, .9);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .14);
+}
+
+#site-header .nav-link.active:hover,
+#site-header .nav-link.active:focus-visible {
+  background-color: rgba(93, 104, 138, .16);
+  box-shadow: 0 12px 26px rgba(15, 23, 42, .1), inset 0 1px rgba(255, 255, 255, .82);
+}
+
+.dark #site-header .nav-link:hover,
+.dark #site-header .nav-link:focus-visible {
+  background-color: rgba(148, 163, 184, .18);
+  color: rgba(248, 250, 252, .92);
+}
+
+.dark #site-header .nav-link.active {
+  background-color: rgba(148, 163, 184, .24);
+  color: rgba(248, 250, 252, .95);
+  box-shadow: inset 0 1px rgba(255, 255, 255, .18);
+}
+
+/* ==========================================================================
+   MOBILE MENU CUSTOMIZATIONS
+   <= 1023px
+   ========================================================================== */
+
+@media (max-width: 1023px) {
+  #site-header #nav-menu {
+    position: absolute !important;
+    top: calc(100% + 2rem) !important;
+    right: 1rem !important; /* Offset from right edge */
+    left: auto !important;
+    width: min(18rem, calc(100vw - 4.5rem)) !important; 
+    max-width: 400px !important;margin: 0 !important;
+    padding: 1.5rem 1rem 1rem !important;
+    max-height: min(80vh, 24rem);
+    border-radius: 1.5rem !important;
+    background: color-mix(in srgb, var(--color-secondary-600) 95%, transparent) !important; 
+    box-shadow: 0 4px 15px rgba(var(--color-neutral-900), 0.08)!important;
+    backdrop-filter: blur(55px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(55px) saturate(180%) !important;
+    transition: transform .25s ease;
+    z-index: 1000 !important;
+    overflow-y: auto !important;
+  }
+}

@@ -53,56 +53,10 @@ sections:
         columns: "3"
         spacing:
           padding: ["0", 0, "0", "0"]
-#   - block: features
-#     id: process
-#     content:
-#         title: How It Works
-#         text: Getting professional audio for your business is simple.
-#         items:
-#         - name: We Learn About Your Business
-#           icon: chat-bubble-left-right
-#           description: We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
-#         - name: We Write Your Script
-#           icon: pencil-square
-#           description: Our copywriters create clear, engaging messages designed to inform callers and promote your business.
-#         - name: You Choose Voice & Music
-#           icon: musical-note
-#           description: Select the voice talent and music style that best matches your company image.
-#         - name: We Produce the Audio
-#           icon: adjustments-horizontal
-#           description: Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
-#         - name: We Help You Get Set Up
-#           icon: cloud-arrow-up
-#           description: Once approved, your finished audio is prepared for your phone system or chosen platform.
-#     design:
-#         columns: "1"
-  # - block: markdown #  one that worked
-  #   content:
-  #     title: How It Works
-  #     subtitle: "Getting professional audio for your business is simple."
-  #     text: |
-  #           **1. We Learn About Your Business -**
-  #           We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
-
-  #           **2. We Write Your Script -**
-  #           Our copywriters create clear, engaging messages designed to inform callers and promote your business.
-
-  #           **3. You Choose Voice & Music -**
-  #           Select the voice talent and music style that best matches your company image.
-
-  #           **4. We Produce the Audio -**
-  #           Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
-
-  #           **5. We Help You Get Set Up -**
-  #           Once approved, your finished audio is prepared for your phone system or chosen platform.
-  #   design:
-  #     columns: "1"
-  #     background:
-  #       color: "white" 
   - block: cta-image-paragraph
     content:
       items:
-        - title:
+        # - title:
         - title: How It Works
           # text: Getting professional audio for your business is simple
           feature_icon: ""
@@ -122,18 +76,22 @@ sections:
     design:
       spacing:
         padding: ["0", 0, "0", "0"]
-  - block: cta-card
+  - block: contact-cta-card
     content:
         title: Ready to Improve How Your Business Sounds?
         text: Whether you need on-hold messages, IVR greetings, radio ads, or in-store announcements, we can help you create professional audio that makes the right impression.
         button:
             text: Request a Quote
-            url: /contact
+            url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
+            # url: /contact
     design:
       spacing:
-        padding: ["0", 0, "0", "0"]
+        padding: ["0", ".5rem", "0", ".5rem"]
+        # padding: ["0", 0, "0", "0"]
       card:
         css_class: 'glassmorphism-primary glass-ring glass-shadow text-white'
         text_color: 'light' # auto|light|dark
+        text_align: center
+        text_width: max-w-5xl
         overlay_opacity: 0.15 # 0.0-1.0 for contrast control
 ---

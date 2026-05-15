@@ -28,58 +28,39 @@ sections:
             "Since 1995, we’ve helped businesses turn hold time into a powerful marketing opportunity through professional on-hold messaging, voice production, and customer communication solutions.  <br><br>
             As a woman-owned business, we believe great service starts with real people, personal attention, and treating every client like they matter—because they do."
           image: images/coh_about_us.png
-        - title: A note from the owner
-          feature_icon: ""
-          # feature_icon: bolt
-          features:
-            "When I founded Communications On Hold in 1995, I believed something simple—personal service requires real people. <br><br>
+        # - title: A note from the owner
+        #   feature_icon: ""
+        #   # feature_icon: bolt
+        #   features:
+        #     "When I founded Communications On Hold in 1995, I believed something simple—personal service requires real people. <br><br>
 
-            I wanted every customer to feel genuinely valued, heard, and appreciated, because I knew how powerful that experience could be. Over the years, that belief has remained at the heart of everything we do. <br><br>
+        #     I wanted every customer to feel genuinely valued, heard, and appreciated, because I knew how powerful that experience could be. Over the years, that belief has remained at the heart of everything we do. <br><br>
 
-            While we’ve grown to serve clients across the country and internationally, I still believe the best service comes from personal connection. I stay involved, I stay accessible, and I make sure our clients always know they matter. <br><br>
+        #     While we’ve grown to serve clients across the country and internationally, I still believe the best service comes from personal connection. I stay involved, I stay accessible, and I make sure our clients always know they matter. <br><br>
 
-            When you work with us, you won’t have to jump through hoops—you’ll know exactly who you’re working with, and you’ll know you’re appreciated."
-          image: "images/lorihbayliss.png"
+        #     When you work with us, you won’t have to jump through hoops—you’ll know exactly who you’re working with, and you’ll know you’re appreciated."
+        #   image: "images/lorihbayliss.png"
     design:
       spacing:
-        padding: ["0", 0, "0", "0"]
-  - block: cta-card
+        padding: ["0", "0", "0", "0"]
+  - block: contact-cta-card
     content:
         title: Who We Are
         text: |
-          Communications On Hold isn’t the largest on-hold messaging company—and that’s by design. <br><br>
+          Communications On Hold isn’t the largest on-hold messaging company—*and that’s by design.* <br><br>
           
           We’ve built our business on personal service, exceptional quality, and lasting client relationships rather than volume alone. This allows us to give every client the attention they deserve, whether they’re a local business or an international company. <br><br>
           
           We believe your callers should feel valued from the very first moment they contact you—and that starts with professional, engaging on-hold messaging.
     design:
       spacing:
-        padding: ["0", 0, "0", "0"]
+        padding: ["0", ".5rem", "0", ".5rem"]
       card:
         css_class: "bg-primary-300"
+        text_align: justify
+        text_width: max-w-5xl
         css_style: ""
         overlay_opacity: 0.15 # 0.0-1.0 for contrast control
-  # - block: markdown
-  #   content:
-  #     title: About Communications On Hold
-  #     subtitle: Personal Service. Professional Results.
-  #     text: |-
-  #        Since 1995, we’ve helped businesses turn hold time into a powerful marketing opportunity through professional on-hold messaging, voice production, and customer communication solutions. 
-         
-  #        As a woman-owned business, we believe great service starts with real people, personal attention, and treating every client like they matter—because they do.
-  #   design:
-  #     columns: '1'
-  # - block: markdown
-  #   content:
-  #     title: Who We Are
-  #     subtitle:
-  #     text: |
-  #       Communications On Hold isn’t the largest on-hold messaging company—and that’s by design.
-
-  #       We’ve built our business on personal service, exceptional quality, and lasting client relationships rather than volume alone. This allows us to give every client the attention they deserve, whether they’re a local business or an international company.
-
-  #       We believe your callers should feel valued from the very first moment they contact you—and that starts with professional, engaging on-hold messaging.
-  #       Small company. Big results.
   - block: features
     id: values
     content:
@@ -109,6 +90,8 @@ sections:
           description: Helping businesses reduce hang-ups, improve caller satisfaction, and create more sales opportunities.
     design:
         columns: "3"
+        spacing:
+          padding: ["0", "0", "0", "0"]
   - block: testimonials
     content:
       title: "A note from the owner"
@@ -116,18 +99,22 @@ sections:
       items:
         - name: "Lori Hidalgo Bayliss"
           role: "Owner - Communications On Hold"
-          # Upload image to `assets/media/` and reference the filename here
           image: "images/lorihbayliss.png"
           text: | 
-            When I founded Communications On Hold in 1995, I believed something simple—personal service requires real people.
+            When I founded Communications On Hold in 1995, I believed something simple—*personal service requires real people.* <br> <br>
 
-            I wanted every customer to feel genuinely valued, heard, and appreciated, because I knew how powerful that experience could be. Over the years, that belief has remained at the heart of everything we do.
+            I wanted every customer to feel genuinely valued, heard, and appreciated, because I knew how powerful that experience could be. Over the years, that belief has remained at the heart of everything we do. <br> <br>
 
-            While we’ve grown to serve clients across the country and internationally, I still believe the best service comes from personal connection. I stay involved, I stay accessible, and I make sure our clients always know they matter.
+            While we’ve grown to serve clients across the country and internationally, I still believe the best service comes from personal connection. I stay involved, I stay accessible, and I make sure our clients always know they matter. <br> <br>
 
             When you work with us, you won’t have to jump through hoops—you’ll know exactly who you’re working with, and you’ll know you’re appreciated.
     design:
+      css_class: compact-testimonials
+      background:
+        color: var(--color-primary-50)
       spacing:
+        padding: ["0", "0", "0", "0"]
+      # spacing:
         # Reduce bottom spacing so the testimonial appears vertically centered between sections
-        padding: ["6rem", 0, 0, 0] 
+        # padding: ["6rem", 0, 0, 0] 
 ---

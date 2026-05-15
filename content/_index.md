@@ -27,7 +27,7 @@ sections:
       # Section background color (CSS class)
       # css_class: "bg-gray-100 dark:bg-gray-900"
       spacing:
-        padding: ["0", 0, "0", "0"]
+        padding: ["0", "0", "0", "0"]
   # - block: hero
   #   content:
   #     title: Turn Hold Time Into Sales Opportunities
@@ -61,9 +61,9 @@ sections:
         - statistic: "30%"
           description: |
             of callers who hang up may never call back
-        - statistic: "3x longer"
+        - statistic: "3x"
           description: |
-            callers stay on hold when hearing useful information instead of silence
+            callers stay on hold 3X longer when hearing useful information instead of silence
         - statistic: "93%"
           description: |
             of marketing budgets focus on making the phone ring—not what happens next
@@ -143,20 +143,24 @@ sections:
   #   design:
   #       style: list
   #       show_levels: false
-  - block: cta-card
+  - block: contact-cta-card
     content:
     #   title: Ready to Upgrade Your Caller Experience?
       title: Ready to Upgrade Your Caller Experience?
       text: Let’s create professional on-hold messaging that keeps callers engaged and helps your business stand out.
       button:
         text: Get Your Free Quote
-        url: /contact-us
+        url: 'mailto:lorib@communicationsonhold.com?subject=Request a Quote – Website Enquiry'
+        # url: /contact-us
     design:
       spacing:
-        padding: ["0", 0, "0", 0]
+        # padding: ["0", "0", "0", "0"]
+        padding: ["0", ".5rem", "0", ".5rem"]
       card:
         # Card background color (CSS class)
         css_class: "bg-primary-300"
+        text_align: center
+        text_width: max-w-5xl
         css_style: ""
 #   - block: research-areas
 #     content:

@@ -470,6 +470,8 @@ sections:
                 - title: Radio Commercials
                   file: audio-showcase/audio/messages/radio/Radio_Commercials.mp3
     design:
+      background:
+        color: var(--color-primary-50)
       spacing:
         padding: ["0", "0", "0", "0"]
 ---

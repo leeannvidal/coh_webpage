@@ -1,0 +1,142 @@
+{{/*
+  Contact CTA Card Block
+  Based on CTA-card, but supports:
+  - Two buttons
+  - Text alignment: center, left, right, justify
+  - Wider text on desktop
+*/}}
+
+{{ $block := .wcBlock | default . }}
+{{ $content := $block.content }}
+{{ $design := $block.design }}
+
+{{ $card := $design.card | default dict }}
+{{ $cardClass := $card.css_class | default "" }}
+{{ $cardStyle := $card.css_style | default "" }}
+
+{{/* Overlay opacity */}}
+{{ $overlayOpacity := 0.15 }}
+{{ with $card.overlay_opacity }}
+  {{ $val := float . }}
+  {{ if ge $val 0 }}
+    {{ if le $val 1 }}
+      {{ $overlayOpacity = $val }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* Text color */}}
+{{ $textColorMode := lower ($card.text_color | default "auto") }}
+{{ $textClasses := "text-gray-900 dark:text-white" }}
+{{ $buttonClasses := "text-gray-900 dark:text-gray-100" }}
+
+{{ $bg := $design.background | default dict }}
+{{ $gradient := $bg.gradient | default dict }}
+{{ $gradientStart := $gradient.start | default "" }}
+
+{{ $isDarkBg := false }}
+{{ range slice "primary-7" "primary-8" "primary-9" "secondary-7" "secondary-8" "secondary-9" }}
+  {{ if strings.HasPrefix $gradientStart . }}
+    {{ $isDarkBg = true }}
+  {{ end }}
+{{ end }}
+
+{{ if eq $textColorMode "light" }}
+  {{ $textClasses = "text-white" }}
+  {{ $buttonClasses = "text-gray-900 dark:text-white" }}
+{{ else if eq $textColorMode "dark" }}
+  {{ $textClasses = "text-gray-900 dark:text-white" }}
+  {{ $buttonClasses = "text-gray-900 dark:text-white" }}
+{{ else if $isDarkBg }}
+  {{ $textClasses = "text-white" }}
+  {{ $buttonClasses = "text-gray-900" }}
+{{ end }}
+
+{{/* Alignment: center, left, right, justify */}}
+{{ $align := lower ($card.text_align | default "center") }}
+
+{{ $itemsClass := "items-center" }}
+{{ $textAlignClass := "text-center" }}
+
+{{ if eq $align "left" }}
+  {{ $itemsClass = "items-start" }}
+  {{ $textAlignClass = "text-left" }}
+{{ else if eq $align "right" }}
+  {{ $itemsClass = "items-end" }}
+  {{ $textAlignClass = "text-right" }}
+{{ else if eq $align "justify" }}
+  {{ $itemsClass = "items-center" }}
+  {{ $textAlignClass = "text-justify" }}
+{{ end }}
+
+{{/* Wider text width */}}
+{{ $textWidth := $card.text_width | default "max-w-5xl" }}
+
+{{/* Card background */}}
+{{ $defaultBgClass := "bg-gradient-to-br from-primary-500/90 via-primary-600/95 to-primary-700/90" }}
+{{ $finalCardClass := cond (ne $cardClass "") $cardClass $defaultBgClass }}
+
+{{ $style := printf "--glassmorphism-opacity: %v; %s" $overlayOpacity $cardStyle }}
+
+{{/* Button helper */}}
+{{ $buttons := slice }}
+
+{{ with $content.button }}
+  {{ $buttons = $buttons | append . }}
+{{ end }}
+
+{{ with $content.button_2 }}
+  {{ $buttons = $buttons | append . }}
+{{ end }}
+
+<div
+  class="relative overflow-hidden {{ $finalCardClass }} p-8 sm:p-12 lg:p-16 xl:p-20 mx-auto max-w-6xl rounded-3xl shadow-2xl flex flex-col {{ $itemsClass }} {{ $textAlignClass }}"
+  style="{{ $style | safeCSS }}"
+>
+  {{ with $content.title }}
+    <h2 class="{{ $textClasses }} text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight">
+      {{ . | markdownify }}
+    </h2>
+  {{ end }}
+
+  {{ with $content.text }}
+    <div class="{{ $textClasses }}/80 mt-6 text-lg sm:text-xl lg:text-2xl {{ $textWidth }} leading-relaxed font-light">
+      {{ . | markdownify }}
+    </div>
+  {{ end }}
+
+  {{ if gt (len $buttons) 0 }}
+    <div class="flex flex-col sm:flex-row gap-4 mt-10">
+      {{ range $buttons }}
+        {{ $buttonText := .text | default "" }}
+        {{ $buttonUrl := .url | default "" }}
+
+        {{ if and $buttonText $buttonUrl }}
+          {{ $newTab := .new_tab | default false }}
+
+          {{ if or (strings.HasPrefix $buttonUrl "http://") (strings.HasPrefix $buttonUrl "https://") (strings.HasSuffix $buttonUrl ".pdf") }}
+            {{ $newTab = true }}
+          {{ end }}
+
+          <a
+            href="{{ $buttonUrl | safeURL }}"
+            {{ if $newTab }}target="_blank" rel="noopener"{{ end }}
+            class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 text-lg font-semibold {{ $buttonClasses }} transition-all duration-300 ease-out hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-500/50 dark:focus-visible:ring-white/50 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent"
+          >
+            <div class="absolute inset-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md rounded-2xl ring-1 ring-gray-200/30 dark:ring-white/30 shadow-lg group-hover:bg-white dark:group-hover:bg-gray-800 group-hover:ring-gray-300/50 dark:group-hover:ring-white/50 group-hover:shadow-2xl transition-all duration-300"></div>
+
+            <span class="relative z-10">{{ $buttonText }}</span>
+
+            {{ with .icon }}
+              <span class="relative z-10 transition-transform duration-300 group-hover:translate-x-1">
+                {{/* {{ partial "functions/get_icon" . }} */}}
+              </span>
+            {{ end }}
+
+            <div class="absolute inset-0 bg-white/20 dark:bg-white/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
