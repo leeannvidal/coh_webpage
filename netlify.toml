@@ -55,6 +55,30 @@
     pnpm run pagefind
   """
 
+[[redirects]]
+from = "https://communicationsonhold.net/*"
+to = "https://communicationsonhold.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.communicationsonhold.net/*"
+to = "https://communicationsonhold.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://communicationsonhold.org/*"
+to = "https://communicationsonhold.com/:splat"
+status = 301
+force = true
+
+[[redirects]]
+from = "https://www.communicationsonhold.org/*"
+to = "https://communicationsonhold.com/:splat"
+status = 301
+force = true
+
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
