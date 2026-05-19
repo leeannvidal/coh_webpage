@@ -53,29 +53,57 @@ sections:
         columns: "3"
         spacing:
           padding: ["0", 0, "0", "0"]
-  - block: cta-image-paragraph
+  # - block: cta-image-paragraph
+  #   content:
+  #     items:
+  #       # - title:
+  #       - title: How It Works
+  #         # text: Getting professional audio for your business is simple
+  #         feature_icon: ""
+  #         # feature_icon: bolt
+  #         features:
+  #           "**1. We Learn About Your Business -**
+  #           We listen to your goals, services, promotions, and brand style so your message feels tailored to your company. <br><br>
+  #           **2. We Write Your Script -**
+  #           Our copywriters create clear, engaging messages designed to inform callers and promote your business. <br><br>
+  #           **3. You Choose Voice & Music -** 
+  #           Select the voice talent and music style that best matches your company image. <br><br>
+  #           **4. We Produce the Audio -**
+  #           Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback. <br><br>
+  #           **5. We Help You Get Set Up -**
+  #           Once approved, your finished audio is prepared for your phone system or chosen platform."
+  #         image: images/coh_services.png
+  #   design:
+  #     spacing:
+  #       padding: ["0", "0", "0", "0"]
+  - block: steps
     content:
+      title: How It Works
       items:
-        # - title:
-        - title: How It Works
-          # text: Getting professional audio for your business is simple
-          feature_icon: ""
-          # feature_icon: bolt
-          features:
-            "**1. We Learn About Your Business -**
-            We listen to your goals, services, promotions, and brand style so your message feels tailored to your company. <br><br>
-            **2. We Write Your Script -**
-            Our copywriters create clear, engaging messages designed to inform callers and promote your business. <br><br>
-            **3. You Choose Voice & Music -** 
-            Select the voice talent and music style that best matches your company image. <br><br>
-            **4. We Produce the Audio -**
-            Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback. <br><br>
-            **5. We Help You Get Set Up -**
-            Once approved, your finished audio is prepared for your phone system or chosen platform."
-          image: images/coh_services.png
+        - title: We Learn About Your Business
+          text: We listen to your goals, services, promotions, and brand style so your message feels tailored to your company.
+          # icon: rectangular-stack
+        - title: We Write Your Script
+          text: Our copywriters create clear, engaging messages designed to inform callers and promote your business.
+          # icon: rectangular-stack
+        - title: You Choose Voice & Music
+          text: Select the voice talent and music style that best matches your company image.
+          cta: 
+            text: Browse samples here
+            url: ../audio-showcase/
+          # icon: rectangular-stack
+        - title: We Produce the Audio
+          text: Your final recording is professionally produced, mixed, and mastered for clear, high-quality playback.
+          # icon: rectangular-stack
+        - title: We Help You Get Set Up
+          text: Once approved, your finished audio is prepared for your phone system or chosen platform.
+          # icon: rectangular-stack
     design:
+      # layout: horizontal
+      marker_style: icon
+      connector: dashed
       spacing:
-        padding: ["0", 0, "0", "0"]
+        padding: ["0", "0", "0", "0"]
   - block: contact-cta-card
     content:
         title: Ready to Improve How Your Business Sounds?

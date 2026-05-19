@@ -22,7 +22,7 @@ sections:
         # - title:
         - title: About Communications On Hold
           text: Personal Service. Professional Results.
-          feature_icon: ""
+          feature_icon: na
           # feature_icon: bolt
           features:
             "Since 1995, we’ve helped businesses turn hold time into a powerful marketing opportunity through professional on-hold messaging, voice production, and customer communication solutions.  <br><br>
