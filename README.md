@@ -1,6 +1,5 @@
-# <img src="assets/media/logo.svg" alt="Communications On Hold Logo" width="300"/>
+# <img src="assets/media/logo.svg" alt="Communications On Hold Logo" width="45" valign="middle"/> Communications On Hold — Company Website
 
-# Communications On Hold — Company Website
 
 [![Code License: MIT](https://img.shields.io/github/license/leeannvidal/coh_webpage)](LICENSE)
 ![Last Updated](https://img.shields.io/github/last-commit/leeannvidal/coh_webpage)
