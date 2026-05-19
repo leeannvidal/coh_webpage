@@ -22,4 +22,4 @@ If you’re interested in building your own website with Hugo Blox, visit their 
 
 ## Contact
 
-For more information about Communications On Hold, please visit the company website.
+For more information about Communications On Hold, please visit the company [website](https://communicationsonhold.com).
