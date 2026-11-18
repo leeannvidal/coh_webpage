@@ -13,8 +13,8 @@ hugoblox:
     name: "Communications On Hold"
     organization: ""
     type: local_business # person | organization | local_business
-    tagline: ""
-    description: ""
+    tagline: "When your customers are on hold, your business shouldn’t be!"
+    description: "Woman-owned on-hold marketing since 1995. Custom on-hold messages, professional voice talent and music that keep callers engaged."
     social:
       twitter: ""
 
